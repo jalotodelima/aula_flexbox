@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Content</title>
+
+    <style>
+        .container{
+            height: 350px;
+            max-width: 300px;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .start{
+            align-content: flex-start;
+        }
+
+        .end{
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+        
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+
+</head>
+<body>
+    <p>Stretch</p>
+    <div class="container stretch">
+        <div class="item">ajpojpafpjaja</div>
+        <div class="item">pafdkkfadkafdkoafdkkdf</div>
+        <div class="item">akfdmpkmafdpmfadmafdpmdppfdm</div>
+        <div class="item">afdfdadfadf</div>
+        <div class="item">mvzkçmkvzmzv</div>
+        <div class="item">kofaekaoefkof</div>
+        <div class="item">pkoefwkpoerwopoéwwe</div>
+    </div>
+
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">ajpojpafpjaja</div>
+        <div class="item">pafdkkfadkafdkoafdkkdf</div>
+        <div class="item">akfdmpkmafdpmfadmafdpmdppfdm</div>
+        <div class="item">afdfdadfadf</div>
+        <div class="item">mvzkçmkvzmzv</div>
+        <div class="item">kofaekaoefkof</div>
+        <div class="item">pkoefwkpoerwopoéwwe</div>
+    </div>
+
+    <p>Flex-Start</p>
+    <div class="container start">
+        <div class="item">ajpojpafpjaja</div>
+        <div class="item">pafdkkfadkafdkoafdkkdf</div>
+        <div class="item">akfdmpkmafdpmfadmafdpmdppfdm</div>
+        <div class="item">afdfdadfadf</div>
+        <div class="item">mvzkçmkvzmzv</div>
+        <div class="item">kofaekaoefkof</div>
+        <div class="item">pkoefwkpoerwopoéwwe</div>
+    </div>
+
+    <p>Flex-End</p>
+    <div class="container end">
+        <div class="item">ajpojpafpjaja</div>
+        <div class="item">pafdkkfadkafdkoafdkkdf</div>
+        <div class="item">akfdmpkmafdpmfadmafdpmdppfdm</div>
+        <div class="item">afdfdadfadf</div>
+        <div class="item">mvzkçmkvzmzv</div>
+        <div class="item">kofaekaoefkof</div>
+        <div class="item">pkoefwkpoerwopoéwwe</div>
+    </div>
+
+    <p>Space-Around</p>
+    <div class="container space-around">
+        <div class="item">ajpojpafpjaja</div>
+        <div class="item">pafdkkfadkafdkoafdkkdf</div>
+        <div class="item">akfdmpkmafdpmfadmafdpmdppfdm</div>
+        <div class="item">afdfdadfadf</div>
+        <div class="item">mvzkçmkvzmzv</div>
+        <div class="item">kofaekaoefkof</div>
+        <div class="item">pkoefwkpoerwopoéwwe</div>
+    </div>
+
+    <p>Space-Between</p>
+    <div class="container space-between">
+        <div class="item">ajpojpafpjaja</div>
+        <div class="item">pafdkkfadkafdkoafdkkdf</div>
+        <div class="item">akfdmpkmafdpmfadmafdpmdppfdm</div>
+        <div class="item">afdfdadfadf</div>
+        <div class="item">mvzkçmkvzmzv</div>
+        <div class="item">kofaekaoefkof</div>
+        <div class="item">pkoefwkpoerwopoéwwe</div>
+    </div>
+</body>
+</html>
